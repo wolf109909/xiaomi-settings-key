@@ -1,0 +1,11 @@
+[Unit]
+Description=Xiaomi Book 14 settings key handler
+After=multi-user.target
+
+[Service]
+ExecStart=/usr/bin/xiaomi-settings-keyd
+Restart=on-failure
+RestartSec=2
+
+[Install]
+WantedBy=multi-user.target
