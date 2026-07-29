@@ -122,6 +122,7 @@ def resolve_command(user):
 
 
 def run_command():
+    user = None
     if os.geteuid() != 0:
         # unprivileged mode: just run the user's own config
         cmd = resolve_command(None)
@@ -146,8 +147,7 @@ def run_command():
         argv = ["runuser", "-u", user, "--", "/bin/sh", cmd]
     try:
         subprocess.Popen(argv, env=env)
-        print(f"ran {cmd} as {user if os.geteuid() == 0 else 'self'}",
-              flush=True)
+        print(f"ran {cmd} as {user if user else 'self'}", flush=True)
     except OSError as e:
         print(f"failed to run {cmd}: {e}", file=sys.stderr, flush=True)
 
