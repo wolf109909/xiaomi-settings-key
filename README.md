@@ -1,7 +1,7 @@
 # xiaomi-settings-key — userspace handler for the Xiaomi Book 14 "settings" key
 
 Makes the dedicated **settings key** (top-right of the keyboard, next to the
-power button) on the Xiaomi Book 14 Pro 2026 useful on Linux: each press runs
+power button) on the Xiaomi Book Pro 14 2026 useful on Linux: each press runs
 a **user-configurable command** (default: `konsole`).
 
 Requires the sibling **[xiaomi-book14-dkms](../xiaomi-book14-dkms)** kernel

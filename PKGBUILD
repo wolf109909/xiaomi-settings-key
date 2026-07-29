@@ -1,8 +1,8 @@
-# Maintainer: reverse-engineered for Xiaomi Book 14 Pro 2026
+# Maintainer: reverse-engineered for Xiaomi Book Pro 14 2026
 pkgname=xiaomi-settings-key
 pkgver=1.0.0
-pkgrel=2
-pkgdesc="Userspace handler for the Xiaomi Book 14 Pro 2026 dedicated settings key (runs a configurable command on press)"
+pkgrel=3
+pkgdesc="Userspace handler for the Xiaomi Book Pro 14 2026 dedicated settings key (runs a configurable command on press)"
 arch=('any')
 license=('GPL-2.0-or-later')
 depends=('python' 'systemd')
