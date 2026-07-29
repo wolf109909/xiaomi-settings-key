@@ -4,7 +4,7 @@ Makes the dedicated **settings key** (top-right of the keyboard, next to the
 power button) on the Xiaomi Book Pro 14 2026 useful on Linux: each press runs
 a **user-configurable command** (default: `konsole`).
 
-Requires the sibling **[xiaomi-book14-dkms](../xiaomi-book14-dkms)** kernel
+Requires the sibling **[xiaomi-book14-dkms](https://github.com/wolf109909/xiaomi-book14-dkms)** kernel
 module, which turns the EC hotkey into an input device
 (`Xiaomi Book 14 Settings Key`, keycode `KEY_CONFIG`).
 
